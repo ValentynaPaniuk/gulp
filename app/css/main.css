@@ -1,0 +1,47 @@
+:root {
+  --font-family: "Open Sans", sans-serif;
+  --content-width: 1170px;
+  --container-offset: 15px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+  --light-color: #fff;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+.page {
+  height: 100%;
+  font-family: var(--font-family, sans-serif);
+  background-color: rgb(69, 69, 69);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.svg-icon {
+  max-height: 689px;
+  min-height: 337px;
+  width: 100%;
+}
+
+.selector {
+  color: red;
+}
+@media (min-width: 767px) {
+  .selector {
+    color: blue;
+  }
+}
+/*# sourceMappingURL=main.css.map */
